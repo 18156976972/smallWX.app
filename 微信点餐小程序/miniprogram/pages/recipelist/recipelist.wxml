@@ -1,0 +1,68 @@
+ <!-- 判断是否有菜谱 -->
+ <!-- 有菜谱时显示的内容 -->
+ <mp-navigation-bar background="#F6623A" title="" back="{{true}}" color="#ffffff">
+
+ 	<view slot="center" class="center">
+ 		<mp-icon icon="search" size="{{20}}"></mp-icon>
+ 		{{listinfo[0].typeId}}
+ 	</view>
+
+ </mp-navigation-bar>
+
+
+ <view class="hot-recipe-lists" wx:if="{{islist}}">
+ 	<!-- 菜谱列表 -->
+ 	<view class='hot-recipe-list' wx:for="{{listinfo}}" wx:key="_id">
+ 		<!-- 菜谱图片 -->
+ 		<view class="recipeimage">
+ 			<image src="{{item.cloudImage[0]}}"></image>
+ 		</view>
+ 		<!-- 菜谱信息 -->
+ 		<view class="recipeinfo">
+ 			<!-- 菜谱名称 -->
+ 			<view class="recipename">
+ 				<text>{{item.menuName}}</text>
+ 			</view>
+
+ 			<view class="recipefooter">
+ 				<!-- 几星图片 ， 推荐度（关注度） / 3 来做 -->
+ 				<view class="xingxing">
+ 					<view class="comment1-description">
+ 						<view class="star-pos" style="display:flex;flex-direction:row;">
+ 							<view class="stars  {{flag>=1? 'on': ''}}" bindtap="changeColor1"></view>
+ 							<view class="stars  {{flag>=2? 'on': ''}}" bindtap="changeColor2"></view>
+ 							<view class="stars  {{flag>=3? 'on': ''}}" bindtap="changeColor3"></view>
+ 							<view class="stars  {{flag>=4? 'on': ''}}" bindtap="changeColor4"></view>
+ 							<view class="stars  {{flag>=5? 'on': ''}}" bindtap="changeColor5"></view>
+ 						</view>
+ 					</view> 
+
+ 				</view>
+ 				<!-- 菜谱发布人信息 -->
+
+
+ 				<view class="recipedetail">
+ 					<image class="usernameimage" src="{{item.userInfo.avatarUrl}}"></image>
+ 					<text>{{item.userInfo.nickName}}</text>
+ 					<image class="tjimage" src="/static/index/tj.png"></image>
+ 					<text>{{item.follows}}</text>
+ 					<image class="hotimage" src="/static/index/hot.png"></image>
+ 					<text>{{item.views}}</text>
+ 				</view>
+ 			</view>
+
+ 		</view>
+ 	</view>
+
+
+ </view>
+
+
+ <!-- 没有菜谱时显示的内容 -->
+ <view class="tips" wx:else>
+ 	暂时还没有朋友发布菜谱哦！！！
+ </view>
+ <!-- 滚动获取数据时，数据不够的情况 -->
+ <view class="tips" wx:if="{{isDown}}">
+ 	已经没有数据啦！！！
+ </view>

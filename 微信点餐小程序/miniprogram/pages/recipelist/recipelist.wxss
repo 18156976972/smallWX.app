@@ -1,0 +1,118 @@
+/* pages/recipelist/recipelist.wxss */
+
+.hot-recipe-lists {
+  margin-top: 10px;
+}
+
+/* 菜谱列表 */
+.hot-recipe-list {
+  width: 90%;
+  height: 270rpx;
+  margin: 15px 5%;
+  /* border: 1px solid #ccc; */
+  display: flex;
+}
+
+/* 菜谱图片 */
+.recipeimage{
+  width: 255rpx;
+  height: 255rpx;
+}
+.recipeimage image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.tips {
+  text-align: center;
+  font-size: 13px;
+  /* margin: px  0px; */
+  color: #bbb;
+}
+
+
+.usernameimage {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.tjimage {
+  width: 20px;
+  height: 18px;
+}
+
+.hotimage {
+  width: 22px;
+  height: 22px;
+}
+
+
+.recipeinfo {
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 菜谱名称 */
+.recipename text {
+  font-size: 17px;
+  font-weight: bolder
+}
+
+
+
+/* 发布菜谱的详细信息 */
+.recipedetail {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recipedetail image {
+  margin-right: 5px;
+}
+
+.recipedetail text {
+  margin-right: 14rpx;
+  font-size: 24rpx;
+  color: #bbb;
+}
+
+.xingxing image {
+  width: 22px;
+  height: 22px;
+}
+
+
+
+
+.comment1-description{
+  padding:30rpx 0;
+  display:flex;
+  flex-direction:row;
+}
+.stars{
+    background:url("https://7465-test-qyglw-1302927587.tcb.qcloud.la/set_up_img/xingxing0.png?sign=f465b574e23f5ffb2ed31312bbbd9068&t=1598793254");
+    width: 50rpx;
+    height: 50rpx;
+    background-size: 50rpx 50rpx;
+    margin-left: 30rpx;
+    transition: 600ms;
+}
+.on{
+    background:url("https://7465-test-qyglw-1302927587.tcb.qcloud.la/set_up_img/xingxing1.png?sign=45b3072d35ef8a00fb717358c273ac4c&t=1598793234");
+    width: 50rpx;
+    height: 50rpx;
+    background-size: 50rpx 50rpx;
+    transition: 1s;
+    transform: scale(1,1)
+}
+.weui-cells_after-title{
+  width: 92%;
+  margin:0 auto;
+  border:1px solid #ddd;
+}

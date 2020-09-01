@@ -1,0 +1,85 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "",
+	"appid": "wx1b41fefe4f9411d6",
+	"projectname": "小U商城",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "details",
+					"pathName": "pages/details/details",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "cart",
+					"pathName": "pages/cart/cart",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "confirm",
+					"pathName": "pages/confirm/confirm",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "classify",
+					"pathName": "pages/classify/classify",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/send/send",
+					"pathName": "pages/send/send",
+					"scene": null
+				}
+			]
+		}
+	}
+}

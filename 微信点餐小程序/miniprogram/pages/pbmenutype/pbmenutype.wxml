@@ -1,0 +1,43 @@
+<view class='adminPerson'>
+	<!-- 菜谱分类列表 (菜谱分类列表) -->
+	<view class='cpfllb'>
+		<view wx:for="{{info}}" wx:key="_id">
+			<text class="txt">{{item.typeName}}</text>
+			<text class="btn" style="background:#f1613c" data-id="{{item._id}}" data-index="{{index}}" bindtap="removeMenu">删除</text>
+			<text class="btn" style="background:#4578ff" bindtap="changmenu" id="{{item._id}}">修改</text>
+		</view>
+		<!-- 添加按钮 -->
+		<view class="fladd" bindtap="menuAdd">
+			<image src="/static/personal/add.png"></image>
+		</view>
+
+	</view>
+ 
+	
+	<!--    页面 （菜谱添加分类） -->
+	<view class='cptjfl' wx:if="{{ischangadd==true}}">
+
+		<form bindsubmit="mySubmit">
+			<mp-cell prop="mobile" ext-class=" weui-cell_vcode">
+				<!-- 输入菜谱分类 -->
+				<input class="weui-input" placeholder="输入菜谱分类" name="menuName" value="{{isadd}}" />
+				<button slot="footer" class="weui-vcode-btn" form-type="submit">添加</button>
+			</mp-cell>
+		</form>
+
+	</view>
+
+	<!-- 修改页面  （菜谱修改分类）-->
+	<view class='cptjfl' wx:if="{{ischangupdate==true}}">
+
+		<form bindsubmit="mySubmitchange">
+			<mp-cell prop="mobile" ext-class=" weui-cell_vcode">
+				<!-- 输入菜谱分类 -->
+				<input class="weui-input" placeholder="输入菜谱分类" name="changMenuName" value="{{isadd}}" />
+				<button slot="footer" class="weui-vcode-btn" form-type="submit">修改</button>
+			</mp-cell>
+		</form>
+
+	</view>
+
+</view>

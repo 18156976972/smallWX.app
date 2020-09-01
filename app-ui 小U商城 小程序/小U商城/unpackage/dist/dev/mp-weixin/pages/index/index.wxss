@@ -1,0 +1,698 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 导入外部的样式文件 */
+page.data-v-57280228{
+		background: #F1F1F1;
+}
+/* 顶部top  logo + 搜索input */
+.HomeTop.data-v-57280228{
+		width: 750rpx;
+		height: 80rpx;
+		border-bottom: 1px solid #C8C7CC;	
+		/* 弹性盒子 */
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+		background: #fff;
+}
+.logo.data-v-57280228{
+		width: 180rpx;
+		height: 40rpx;
+}
+.textinput.data-v-57280228{
+		width: 280rpx;
+		height: 40rpx;
+		border-radius: 5rpx;
+		background-color: #F1F1F1;
+		font-size: 22rpx;
+		padding: 10rpx 10rpx 10rpx 30rpx;
+}
+.logoView.data-v-57280228{
+		margin-left: 20rpx;
+		margin-right: 100rpx;
+}
+/* 导航标题栏  begin */
+.tabs.data-v-57280228 {
+	    -webkit-box-flex: 1;
+	    -webkit-flex: 1;
+	            flex: 1;
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	    -webkit-flex-direction: column;
+	            flex-direction: column;
+	    overflow: hidden;
+	    background-color: #ffffff;
+}
+.scroll-h.data-v-57280228 {
+	    width: 750rpx;
+	    height: 80rpx;
+	    -webkit-box-orient: horizontal;
+	    -webkit-box-direction: normal;
+	    -webkit-flex-direction: row;
+	            flex-direction: row;
+
+	    white-space: nowrap;
+}
+/* .line-h {
+	    height: 1rpx;
+	    background-color: #cccccc;
+	} */
+.uni-tab-item.data-v-57280228 {
+
+	    display: inline-block;
+
+	    -webkit-flex-wrap: nowrap;
+	            flex-wrap: nowrap;
+	    padding-left: 34rpx;
+	    padding-right: 34rpx;
+}
+.uni-tab-item-title.data-v-57280228 {
+	    color: #555;
+	    font-size: 30rpx;
+	    height: 80rpx;
+	    line-height: 80rpx;
+	    -webkit-flex-wrap: nowrap;
+	            flex-wrap: nowrap;
+
+	    white-space: nowrap;
+
+		padding-bottom: 5rpx;
+}
+.uni-tab-item-title-active.data-v-57280228 {
+	    color: #f00;
+		border-bottom: 2px solid #f00;
+}
+/* 顶部导航结束 end */
+/* swiper轮播图start */
+.swiper-item image.data-v-57280228{
+		width: 100%;
+}
+/* swiper轮播图end */
+/* 功能导航start */
+.FunctNavCon.data-v-57280228{
+		width: 750rpx;
+		height: 180rpx;
+		background: #fff;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: space-around;
+		        justify-content: space-around;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+}
+.FunctNavLi.data-v-57280228{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+}
+.FunctNavLi ._p.data-v-57280228{
+		font-size: 26rpx;
+}
+.FunImg.data-v-57280228{
+		width: 75rpx;
+		height: 75rpx;
+}
+/* 功能导航结束end */
+/* 推荐部分开始start */
+/* 整体的大的盒子 */
+.HotGoods.data-v-57280228 {   
+	    height:380rpx;
+	    border-bottom: 2rpx  solid #f1f1f1;
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: flex;
+	    overflow: hidden;
+		background: #ffffff;
+		margin: 36rpx 0rpx;
+}
+/* 热推左侧盒子 */
+.HotLeft.data-v-57280228 {
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+		border-right: 2rpx solid #f0f0f0;
+		padding: 0 20rpx;
+}
+/* 左侧盒子内容 */
+.LimitedContent.data-v-57280228 {
+		padding-top: 10rpx;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+}
+.LimitedImg.data-v-57280228 {
+		width:34rpx;
+		height:34rpx;
+}
+.Limited.data-v-57280228 {
+		font-size:34rpx;
+		color: #f32963;
+}
+.LimitedTitle.data-v-57280228 {
+		padding: 5rpx 0px;
+		font-size: 28rpx;
+		color: #969696;
+}
+.LimitTimeAll.data-v-57280228{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+}
+.LimitTime.data-v-57280228 {
+		width: 50rpx;
+		height:50rpx;
+		background: #000;
+		color: #fff;
+		text-align: center;
+		line-height: 50rpx;
+}
+.maohao.data-v-57280228{
+		margin: 0rpx 4rpx;
+}
+.Seckill.data-v-57280228 {
+		width:100rpx;
+		height:50rpx;
+		background: #fee300;
+		color: #fff;
+		text-align: center;
+		line-height:50rpx;
+		margin-left: 10rpx;
+}
+.LimitedgoodsImg.data-v-57280228 {
+		margin-left: 38rpx;
+		/* margin-top: 25rpx; */
+		width: 300rpx;
+		height: 220rpx;
+}
+/* 推荐部分右侧 */
+/* 热推右侧盒子 */
+.HotRight.data-v-57280228 {
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		        flex-direction: column;
+}
+.HotTop.data-v-57280228 {
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+		border-bottom: 2rpx solid #f0f0f0;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		padding-left: 20rpx;
+}
+.HomeTopInfo.data-v-57280228{
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+}
+.Cloth.data-v-57280228{
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+}
+.Cloth image.data-v-57280228{
+		width: 140rpx;
+		height: 180rpx;
+}
+.BrandNew.data-v-57280228{
+		font-size:34rpx;
+		color: #f32963;
+}
+.HomeTopInfoOne.data-v-57280228{
+		padding-top: 10rpx;
+}
+.Discount.data-v-57280228{
+		font-size: 24rpx;
+		background:#f32963;
+		color: #fff;
+		padding: 0rpx 6rpx;
+}
+.HomeTopRobbig.data-v-57280228{
+		font-size: 20rpx;
+		color: #999999;
+}
+/* 底部 */
+.HotBottom.data-v-57280228 {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+}
+.HotBottomLeftImage.data-v-57280228,.HotBottomRightImage.data-v-57280228{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+}
+.HotBottomLeftImage image.data-v-57280228,.HotBottomRightImage image.data-v-57280228{
+		width: 100rpx;
+		height: 90rpx;
+}
+.HotBottomLeft.data-v-57280228{
+		border-right: 2rpx solid #f0f0f0;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+}
+.HotBottomRight.data-v-57280228{
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+}
+.HotBottomLeftInfo.data-v-57280228,.HotBottomRightInfo.data-v-57280228{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+}
+.HotBottomLeftInfoTitle.data-v-57280228,.HotBottomRightInfoTitle.data-v-57280228{
+		font-size:34rpx;
+		color: #f32963;
+}
+.HotBottomLeftInfoDetail.data-v-57280228,.HotBottomRightInfoDetail.data-v-57280228{
+		font-size: 20rpx;
+		color: #999999;
+}
+/* 推荐部分结束end */
+/* 第二个图片start */
+.Swiper2.data-v-57280228{
+		margin-bottom: 36rpx;
+}
+.Swiper2Img.data-v-57280228{
+		width: 750rpx;
+		height: 230rpx;
+}
+/* 第二个图片结束end */
+/* 底部商品推荐 */
+.products.data-v-57280228{
+		background: #ffffff;
+		padding: 20rpx;
+}
+.tags.data-v-57280228{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+}
+.tag_list.data-v-57280228{
+		height: 70rpx;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+		border: 2rpx solid #f0f0f0;
+		text-align: center;
+		line-height: 70rpx;
+		font-size: 30rpx;
+}
+.active_tag_list.data-v-57280228{
+		background: #DD524D;
+		color: #FFFFFF;
+}
+/* 商品列表 */
+.product.data-v-57280228{
+		width: 704rpx;
+		height: 320rpx;
+		border: 4rpx solid #F0F0F0;
+		margin-top: 20rpx;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		border-radius: 10rpx;
+		box-shadow: #C8C7CC 5rpx;
+}
+.GoodsImg.data-v-57280228{
+		width: 220rpx;
+		height: 220rpx;
+}
+.GoodsLeft.data-v-57280228{
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+}
+.GoodsCont.data-v-57280228{
+		-webkit-box-flex: 2;
+		-webkit-flex: 2;
+		        flex: 2;
+		margin-left: 10rpx;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+}
+.GoodsCont view.data-v-57280228{
+		padding: 8rpx 0rpx;
+}
+.GoodsPrice.data-v-57280228{
+		color: red;
+}
+.yimai.data-v-57280228{
+		font-size: 24rpx;
+		color: #ccc;
+}
+.Immed.data-v-57280228{
+		font-size: 26rpx;
+		background: orange;
+		width: 160rpx;
+		height: 40rpx;
+		color: #fff;
+		line-height: 40rpx;
+		text-align: center;
+		border-radius: 8rpx;
+}
+.nav.data-v-57280228{
+	border-bottom: 0;
+}
+.swiper-item.data-v-57280228{
+	width: 100% !important;
+	height: 100% !important;
+}
+.swiper-item image.data-v-57280228{
+	height: 100% !important;
+}
+
