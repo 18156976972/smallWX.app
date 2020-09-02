@@ -134,7 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniSearchBar = function uniSearchBar() {__webpack_require__.e(/*! require.ensure | components/uni-search-bar/uni-search-bar */ "components/uni-search-bar/uni-search-bar").then((function () {return resolve(__webpack_require__(/*! @/components/uni-search-bar/uni-search-bar.vue */ 97));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator */ 17));
 
 
 
@@ -187,16 +187,58 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+var _tools = __webpack_require__(/*! @/utils/tools.js */ 20);
 
 
-
-
-
-
+var _api = __webpack_require__(/*! ../../utils/api.js */ 21);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var uniSearchBar = function uniSearchBar() {__webpack_require__.e(/*! require.ensure | components/uni-search-bar/uni-search-bar */ "components/uni-search-bar/uni-search-bar").then((function () {return resolve(__webpack_require__(/*! @/components/uni-search-bar/uni-search-bar.vue */ 97));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 {
-  components: { uniSearchBar: uniSearchBar } };exports.default = _default;
+  components: {
+    uniSearchBar: uniSearchBar },
+
+  data: function data() {
+    return {
+      info: [],
+      info2: [],
+      baseUrl: _tools.baseUrl,
+      isShow: false,
+      isTrue: false };
+
+  },
+  methods: {
+    searchinfo: function searchinfo(e) {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var data, result;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+                console.log(e.value);
+                data = {
+                  keywords: e.value };_context.next = 4;return (
+
+                  (0, _api.search)(data));case 4:result = _context.sent;
+                console.log(result[1].data.list);
+                _this.info2 = result[1].data.list;
+                if (_this.info) {
+                  _this.isTrue = true;
+                  _this.isShow = false;
+                }case 8:case "end":return _context.stop();}}}, _callee);}))();
+
+    } },
+
+  onLoad: function onLoad(e) {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var data, token, result;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:
+              console.log(e.index);
+              data = {
+                uid: uni.getStorageSync('userInfo').uid };
+
+              token = {
+                authorization: uni.getStorageSync('userInfo').token };
+
+              console.log(token);_context2.next = 6;return (
+                (0, _api.orders)(data, token));case 6:result = _context2.sent;
+              console.log(result);
+              _this2.info = result[1].data.list;
+              if (_this2.info) {
+                _this2.isShow = true;
+              }case 10:case "end":return _context2.stop();}}}, _callee2);}))();
+  } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

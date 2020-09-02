@@ -53,9 +53,9 @@ async function  sms(data){
 	return await request("/api/sms",data)
 }
 //用户登录
-async function  wxlogin(data){
+async function  wxlogin(data){ 
 	return await request("/api/wxlogin",data)
-}
+} 
 
 //订单的提交
 async function  orderadd(params,idstr,token){
@@ -72,7 +72,13 @@ async function  checktoken(token){
 	})
 }
 
+// 订单查询
+async function  orders(data,token){
+	return await request("/api/orders",data,'GET',token)
+}
+
+
 
 
 export {getseckill,getindexgoods,search,getcates,getgoodsinfo,cartlist,getcategoods,
-cartadd,sms,wxlogin,cartedit,orderadd,cartdelete,checktoken}
+cartadd,sms,wxlogin,cartedit,orderadd,cartdelete,checktoken,orders}

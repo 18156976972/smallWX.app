@@ -165,7 +165,7 @@
 				var result =await orderadd(params,idstr,token)
 				// console.log(result)
 				uni.reLaunch({
-					url:"../mine/mine"
+					url:"../order/order"
 				})
 				uni.showToast({
 					title:'提交成功',

@@ -297,7 +297,7 @@ var _api = __webpack_require__(/*! ../../utils/api.js */ 21);function _interopRe
                   (0, _api.orderadd)(params, idstr, token));case 12:result = _context.sent;
                 // console.log(result)
                 uni.reLaunch({
-                  url: "../mine/mine" });
+                  url: "../order/order" });
 
                 uni.showToast({
                   title: '提交成功',
